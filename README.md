@@ -55,7 +55,9 @@ We use the following datasets to test our models:
 
 We compare the performance on the above datasets of three models: Llama 3.2, GPT-Neo, and Yi (01-ai). The models are each prompted using zero-shot, few-shot, and chain-of-thought prompting.
 
-We obtain a baseline performance on each dataset using fine-tuned Bart and T5 models. To ensure uniformity across each experiment, and to take advantage of their training tasks, the BART and T5 models employ a text generation head.
+We obtain a baseline performance on each dataset using fine-tuned Bart and T5 models. To ensure uniformity across each experiment, and to take advantage of their training tasks, the BART and T5 models employ a text generation head. 
+
+> **Note**: The T5 notebooks also include models with a classification head to compare against the models with the text generation head to illustrate this point; only the generative T5 models are used for baseline performances.
 
 ### Metrics
 
