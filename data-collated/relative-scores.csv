@@ -1,4 +1,6 @@
 Model,Type,Dataset,Accuracy,Precision,Recall,F1-Score,Support,Filtered
+BART (139M),(Conditional),CARER,92.83,0.93,0.85,0.88,2000,0
+T5 (223M),(Conditional),CARER,93.0,0.9,0.86,0.88,2000,0
 GPT-Neo (2.7B),Zero-Shot,CARER,"35.35 (\textcolor{Red}{-57.48}, \textcolor{Red}{-57.65})","0.61 (\textcolor{Red}{-0.32}, \textcolor{Red}{-0.29})","0.23 (\textcolor{Red}{-0.62}, \textcolor{Red}{-0.63})","0.18 (\textcolor{Red}{-0.7}, \textcolor{Red}{-0.7})",2000,N/A
 GPT-Neo (2.7B),Few-Shot,CARER,"35.25 (\textcolor{Red}{-57.58}, \textcolor{Red}{-57.75})","0.48 (\textcolor{Red}{-0.45}, \textcolor{Red}{-0.42})","0.27 (\textcolor{Red}{-0.58}, \textcolor{Red}{-0.59})","0.20 (\textcolor{Red}{-0.68}, \textcolor{Red}{-0.68})",2000,N/A
 GPT-Neo (2.7B),Few-Shot CoT,CARER,"55.98 (\textcolor{Red}{-36.85}, \textcolor{Red}{-37.02})","0.52 (\textcolor{Red}{-0.41}, \textcolor{Red}{-0.38})","0.50 (\textcolor{Red}{-0.35}, \textcolor{Red}{-0.36})","0.50 (\textcolor{Red}{-0.38}, \textcolor{Red}{-0.38})",786,1214
@@ -9,6 +11,8 @@ YI 1.5 (6B),Zero-Shot,CARER,"44.56 (\textcolor{Red}{-48.27}, \textcolor{Red}{-48
 YI 1.5 (6B),Few-Shot,CARER,"52.35 (\textcolor{Red}{-40.48}, \textcolor{Red}{-40.65})","0.48 (\textcolor{Red}{-0.45}, \textcolor{Red}{-0.42})","0.45 (\textcolor{Red}{-0.4}, \textcolor{Red}{-0.41})","0.43 (\textcolor{Red}{-0.45}, \textcolor{Red}{-0.45})",1912,88
 YI 1.5 (6B),Few-Shot CoT,CARER,"55.09 (\textcolor{Red}{-37.74}, \textcolor{Red}{-37.91})","0.47 (\textcolor{Red}{-0.46}, \textcolor{Red}{-0.43})","0.45 (\textcolor{Red}{-0.4}, \textcolor{Red}{-0.41})","0.44 (\textcolor{Red}{-0.44}, \textcolor{Red}{-0.44})",1886,114
 Human Evaluation,N/A,CARER,"46.00 (\textcolor{Red}{-46.83}, \textcolor{Red}{-47.0})","0.40 (\textcolor{Red}{-0.53}, \textcolor{Red}{-0.5})","0.42 (\textcolor{Red}{-0.43}, \textcolor{Red}{-0.44})","0.39 (\textcolor{Red}{-0.49}, \textcolor{Red}{-0.49})",400,0
+BART (139M),(Conditional),HATE,90.94,0.79,0.74,0.76,1071,0
+T5 (223M),(Conditional),HATE,92.2,0.81,0.76,0.79,1071,0
 GPT-Neo (2.7B),Zero-Shot,HATE,"88.70 (\textcolor{Red}{-2.24}, \textcolor{Red}{-3.5})","0.44 (\textcolor{Red}{-0.35}, \textcolor{Red}{-0.37})","0.50 (\textcolor{Red}{-0.24}, \textcolor{Red}{-0.26})","0.47 (\textcolor{Red}{-0.29}, \textcolor{Red}{-0.32})",1071,N/A
 GPT-Neo (2.7B),Few-Shot,HATE,"88.80 (\textcolor{Red}{-2.14}, \textcolor{Red}{-3.4})","0.44 (\textcolor{Red}{-0.35}, \textcolor{Red}{-0.37})","0.50 (\textcolor{Red}{-0.24}, \textcolor{Red}{-0.26})","0.47 (\textcolor{Red}{-0.29}, \textcolor{Red}{-0.32})",1071,N/A
 GPT-Neo (2.7B),Few-Shot CoT,HATE,"80.78 (\textcolor{Red}{-10.16}, \textcolor{Red}{-11.42})","0.44 (\textcolor{Red}{-0.35}, \textcolor{Red}{-0.37})","0.45 (\textcolor{Red}{-0.29}, \textcolor{Red}{-0.31})","0.45 (\textcolor{Red}{-0.31}, \textcolor{Red}{-0.34})",1071,N/A
@@ -19,6 +23,8 @@ YI 1.5 (6B),Zero-Shot,HATE,"53.18 (\textcolor{Red}{-37.76}, \textcolor{Red}{-39.
 YI 1.5 (6B),Few-Shot,HATE,"74.57 (\textcolor{Red}{-16.37}, \textcolor{Red}{-17.63})","0.62 (\textcolor{Red}{-0.17}, \textcolor{Red}{-0.19})","0.75 (\textcolor{Green}{+0.01}, \textcolor{Red}{-0.01})","0.63 (\textcolor{Red}{-0.13}, \textcolor{Red}{-0.16})",983,88
 YI 1.5 (6B),Few-Shot CoT,HATE,"83.37 (\textcolor{Red}{-7.57}, \textcolor{Red}{-8.83})","0.67 (\textcolor{Red}{-0.12}, \textcolor{Red}{-0.14})","0.77 (\textcolor{Green}{+0.03}, \textcolor{Green}{+0.01})","0.70 (\textcolor{Red}{-0.06}, \textcolor{Red}{-0.09})",1016,55
 Human Evaluation,N/A,HATE,"73.00 (\textcolor{Red}{-17.94}, \textcolor{Red}{-19.2})","0.60 (\textcolor{Red}{-0.19}, \textcolor{Red}{-0.21})","0.73 (\textcolor{Red}{-0.01}, \textcolor{Red}{-0.03})","0.60 (\textcolor{Red}{-0.16}, \textcolor{Red}{-0.19})",400,0
+BART (139M),(Conditional),SST2,93.01,0.93,0.93,0.93,872,0
+T5 (223M),(Conditional),SST2,93.5,0.94,0.94,0.94,872,0
 GPT-Neo (2.7B),Zero-Shot,SST2,"52.06 (\textcolor{Red}{-40.95}, \textcolor{Red}{-41.44})","0.76 (\textcolor{Red}{-0.17}, \textcolor{Red}{-0.18})","0.51 (\textcolor{Red}{-0.42}, \textcolor{Red}{-0.43})","0.36 (\textcolor{Red}{-0.57}, \textcolor{Red}{-0.58})",872,N/A
 GPT-Neo (2.7B),Few-Shot,SST2,"73.17 (\textcolor{Red}{-19.84}, \textcolor{Red}{-20.33})","0.81 (\textcolor{Red}{-0.12}, \textcolor{Red}{-0.13})","0.74 (\textcolor{Red}{-0.19}, \textcolor{Red}{-0.2})","0.72 (\textcolor{Red}{-0.21}, \textcolor{Red}{-0.22})",872,N/A
 GPT-Neo (2.7B),Few-Shot CoT,SST2,"65.08 (\textcolor{Red}{-27.93}, \textcolor{Red}{-28.42})","0.69 (\textcolor{Red}{-0.24}, \textcolor{Red}{-0.25})","0.66 (\textcolor{Red}{-0.27}, \textcolor{Red}{-0.28})","0.64 (\textcolor{Red}{-0.29}, \textcolor{Red}{-0.3})",872,N/A
