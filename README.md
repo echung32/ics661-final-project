@@ -36,6 +36,8 @@ Due to the complexity of natural language, with correct categorization relying o
 
 Especially with techniques like zero-shot, few-shot, and chain-of-thought, it becomes imperative to both choose an appropriate technique for the task and design an effective prompt for the model for optimal performance; yet, how can we determine which technique is "appropriate" for our task, and how do we design an "effective" prompt? What determines an "effective" prompt?
 
+> Full report: [`./_report/report.pdf`](https://github.com/jaydent22/661-final-project/blob/main/_report/report.pdf)
+
 ## Methodology
 
 Contained in this repository are the notebooks used to run each experiment.
@@ -66,6 +68,5 @@ For quantitative analysis, we use the accuracy, precision, recall, and f1 score 
 ## Team Members
 
 - Ethan Chung
-- Anika Rahman Joyita
 - Jayden Carl Tactay
 - Samuel Yang
